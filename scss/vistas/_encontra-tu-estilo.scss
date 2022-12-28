@@ -1,0 +1,107 @@
+@mixin flex{    
+     display:flex;
+     justify-content: space-evenly;
+}
+@mixin flexcolum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.estilo_titulo {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 30px;
+}
+.estilo p{
+padding: 10px 20px;
+}
+.contenedor_imagen {
+    @extend .justify;
+    margin-bottom: 20px;
+    &-industrial{
+        @include flex;
+        margin-top: 20px;
+    }
+    &-nordi{
+        @extend .justify;
+        margin: $defaultSize;
+    }
+    &-nordico{
+        @include flex;
+    }
+}
+.info_estilo{
+    p{
+        padding: 10px $defaultPadding;
+    }
+    &-minimalista p{
+        padding: 10px 20px;
+    }
+    &-boho p{
+        padding: 10px 20px;
+    }
+}
+.contenedor_imagen{
+    @extend .justify;
+    margin-top: 10px;
+    &-minimalista{
+        @extend .justify;
+        margin-top: 10px;
+    }
+    &-minim{
+        @extend .justify;
+    }
+    &-boho{
+        @extend .justify;
+        margin-top: 10px;
+        & img{
+            margin-bottom: $defaultSize;
+        }
+    }
+}
+
+@media (max-width: $bpMedium){
+
+.contenedor_imagen-industrial{
+    @include flexcolum;
+}
+.contenedor_imagen-nordico{
+    @include flexcolum;
+}
+}
+@media (max-width: $bpSmall) {
+.contenedor_imagen img{
+    @include flex;
+    width: 281px;
+    height: 308px;
+}
+.contenedor_imagen-minim img{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+}
+.contenedor_imagen-minimalista{
+    display: none;
+}
+.contenedor_imagen-industrial img{
+    height: 310px;
+    width: 300px;
+}
+.contenedor_imagen-nordico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.contenedor_imagen-nordico img{
+    width: 289px;
+    height: 320px;
+}
+.contenedor_imagen-boho img{
+    @include flex;
+    height: 260px; 
+    width: 280px;
+}
+}

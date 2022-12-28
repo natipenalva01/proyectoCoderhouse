@@ -1,0 +1,77 @@
+.asesoramiento{
+    &_titulo{
+        text-align: center;
+        font-size: 50px;
+        font-weight: bolder;  
+    }
+    &_subtitulo{
+    text-align: center;
+    margin: 0px 10px;
+    }
+}
+.contenedor_info{
+    display: flex;
+    align-items:center;
+    padding: $defaultPadding;
+    &-virtual {
+      p{
+        padding: $defaultPadding;
+      }
+    }
+    &-consulta{
+        p{
+            padding: 20px;
+        }
+        img{
+            margin-bottom: $defaultSize;
+        }
+    }
+}
+.imagen-asesoramiento{
+    @extend .justify;
+    & img{
+        height: 250px;
+        width: 300px;
+        margin: 10px 10px;
+        padding: $defaultPadding;   
+    }
+}
+.boton-reserva{
+    margin: 20px;
+    border: none;
+    padding: 12px;
+    background-color: #a19a9a;
+    margin-top: $defaultSize;
+    font-size: 15px;
+    border-radius: $defaultSize;
+}
+.contenedor-imagen-consulta{
+    @extend .justify;
+    & img{
+        width: 400px;
+        height: 350px; 
+    }
+}
+.estilo-a{
+    color: #0f0f0f;
+    text-decoration: none;
+    &:hover{
+        color: #faf7f7;
+    }
+}
+
+
+@media(max-width:$bpSmall) {
+    .imagen-asesoramiento{
+        display: flex;
+        flex-direction: column;
+    }
+    .contenedor_info img{
+        display: none;
+    }
+    .contenedor-imagen-consulta img{
+        height: 253px;
+        width: 310px;
+        padding: 10px;
+    }
+}

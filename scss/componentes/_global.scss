@@ -1,0 +1,62 @@
+// extends
+.justify {
+    display: flex;
+    justify-content: center; 
+}
+// mixing
+@mixin templateGrid ($cantidadCol) {
+    grid-template-columns: repeat($cantidadCol 1fr);
+    grid-template-rows: repeat(2 1fr); 
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+header img{
+ animation: ease-in animacionLogo 1s;
+}
+@keyframes animacionLogo {
+    0%{
+transform: scale(0);
+    }
+    100%{
+transform: scale(1);
+    }
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #D8D9CF;
+     
+} 
+.footer{
+padding: 40px;
+border-top:$fontDark 1px solid;
+&_nav{
+    @extend .justify;
+    list-style-type: none;
+    margin: 0px 20px; 
+    color: $fontDark;
+    font-weight: bolder;
+}
+}
+i{
+    font-size: 1.3rem; 
+}
+@media(max-width:320px){
+    .footer{
+        display: flex;
+    }
+    .footer_nav{
+       flex-direction: column;
+    }
+    .footer_nav li{
+        font-size: smaller;
+        text-align: center;
+    }
+    i{
+        font-size: 1rem;
+    }
+}

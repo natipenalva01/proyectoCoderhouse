@@ -44,6 +44,7 @@ padding: 40px;
 border-top:#5b5b5b 1px solid;
 }
 .nav-li-footer {
+    
     list-style-type: none;
     margin: 0px 20px; 
     display: flex;

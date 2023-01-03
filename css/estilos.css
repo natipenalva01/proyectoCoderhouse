@@ -1,4 +1,4 @@
-.justify, .footer_nav, .imagen-asesoramiento, .contenedor-imagen-consulta, .contenedor_imagen, .contenedor_imagen-nordi, .contenedor_imagen-minimalista, .contenedor_imagen-minim, .contenedor_imagen-boho, .card-title, .card-text, .btn, .contenedor {
+.justify, .footer_nav, .icono_envio h5, .icono_tarjetas h5, .icono_efectivo h5, .imagen-asesoramiento, .contenedor-imagen-consulta, .contenedor_imagen, .contenedor_imagen-nordi, .contenedor_imagen-minimalista, .contenedor_imagen-minim, .contenedor_imagen-boho, .card-title, .card-text, .btn, .contenedor {
   display: flex;
   justify-content: center; }
 
@@ -83,31 +83,15 @@ iframe {
   display: flex;
   justify-content: space-around; }
   .icono_envio h5 {
-    display: flex;
-    justify-content: center;
     font-size: small; }
   .icono_tarjetas img {
     margin-left: 120px; }
   .icono_tarjetas h5 {
-    display: flex;
-    justify-content: center;
     font-size: small; }
   .icono_efectivo img {
     margin-left: 40px; }
   .icono_efectivo h5 {
-    display: flex;
-    justify-content: center;
     font-size: small; }
-
-@media (max-width: 320px) {
-  .contenedor_imagen img {
-    width: 18rem;
-    padding: 10px; }
-  .contenedor-videos {
-    display: none; }
-  .frase-inicio {
-    font-size: smaller;
-    padding: 20px; } }
 
 @media (max-width: 768px) {
   .video-inicio {
@@ -117,6 +101,18 @@ iframe {
     grid-template-rows: repeat(2 1fr); }
   .contenedor-videos {
     margin-bottom: 10px; } }
+
+@media (max-width: 320px) {
+  .contenedor_imagen img {
+    width: 18rem;
+    padding: 10px; }
+  .contenedor-videos {
+    display: none; }
+  .frase-inicio {
+    font-size: smaller;
+    padding: 20px; }
+  .icono {
+    display: none; } }
 
 .asesoramiento_titulo {
   text-align: center;

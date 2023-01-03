@@ -24,8 +24,7 @@ iframe{
   justify-content: space-around;
   &_envio{
     h5{
-      display: flex;
-      justify-content: center;
+      @extend .justify;
       font-size: small;
     }
   }
@@ -34,8 +33,7 @@ iframe{
       margin-left: 120px;
     }
     h5{
-      display: flex;
-      justify-content: center;
+      @extend .justify;
       font-size: small;
     }
   }
@@ -44,8 +42,7 @@ iframe{
       margin-left: 40px;
     }
     h5{
-      display: flex;
-      justify-content: center;
+      @extend .justify;
       font-size: small;
     }
   }
@@ -53,20 +50,6 @@ iframe{
 
 
 // media queries
-@media(max-width:$bpSmall){
-.contenedor_imagen img{
-  width: 18rem ;
-  padding: $defaultSize;
-} 
-.contenedor-videos{
-  display: none;
-}
-.frase-inicio{
-  font-size: smaller;
-  padding: 20px;
-           
-}
-}
 @media (max-width: $bpMedium) {
 .video-inicio {
   display: grid; }
@@ -76,3 +59,19 @@ iframe{
 .contenedor-videos {
   margin-bottom: 10px;}
 }
+@media(max-width:$bpSmall){
+  .contenedor_imagen img{
+    width: 18rem ;
+    padding: $defaultSize;
+  } 
+  .contenedor-videos{
+    display: none;
+  }
+  .frase-inicio{
+    font-size: smaller;
+    padding: 20px;           
+  }
+  .icono{
+    display: none;
+  }
+  }

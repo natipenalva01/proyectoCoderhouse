@@ -1,52 +1,78 @@
-.contenedor_imagen{
-    @extend .justify ;
-    margin: $defaultSize + 20;
-  & img {
-    width:400px;
-    height:400px;
-  }
-}
+
 .frase-inicio {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-style: italic;
-    font-weight:lighter;
-    font-size:xx-large;
-    margin-bottom: $defaultSize;
-    }  
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-weight:lighter;
+  font-size:xx-large;
+  margin: 20px;
+}  
     
 iframe{
-    width: 560px;
-    height: 315px; 
+  width: 560px;
+  height: 315px;  
 }
-    
+  
 .video-inicio{
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: $defaultSize;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: $defaultSize;
 }
+.icono{
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  &_envio{
+    h5{
+      display: flex;
+      justify-content: center;
+      font-size: small;
+    }
+  }
+  &_tarjetas{
+    img{
+      margin-left: 120px;
+    }
+    h5{
+      display: flex;
+      justify-content: center;
+      font-size: small;
+    }
+  }
+  &_efectivo{
+    img{
+      margin-left: 40px;
+    }
+    h5{
+      display: flex;
+      justify-content: center;
+      font-size: small;
+    }
+  }
+  }
+
 
 // media queries
 @media(max-width:$bpSmall){
 .contenedor_imagen img{
-      width: 18rem ;
-      padding: $defaultSize;
+  width: 18rem ;
+  padding: $defaultSize;
 } 
 .contenedor-videos{
-      display: none;
+  display: none;
 }
 .frase-inicio{
-      font-size: smaller;
-       padding: 20px;
+  font-size: smaller;
+  padding: 20px;
            
 }
 }
 @media (max-width: $bpMedium) {
-  .video-inicio {
-        display: grid; }
+.video-inicio {
+  display: grid; }
 .iframe {
-        @include templateGrid  (1); 
+  @include templateGrid  (1); 
 } 
 .contenedor-videos {
-        margin-bottom: 10px;}
+  margin-bottom: 10px;}
 }

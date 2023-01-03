@@ -17,9 +17,11 @@ iframe{
   display: flex;
   justify-content: space-evenly;
   margin-bottom: $defaultSize;
+  margin: 40px;
 }
 .icono{
-  margin: 20px;
+  text-align: center;
+  margin: 60px 20px 100px 20px;
   display: flex;
   justify-content: space-around;
   &_envio{
@@ -29,18 +31,12 @@ iframe{
     }
   }
   &_tarjetas{
-    img{
-      margin-left: 120px;
-    }
     h5{
       @extend .justify;
       font-size: small;
     }
   }
   &_efectivo{
-    img{
-      margin-left: 40px;
-    }
     h5{
       @extend .justify;
       font-size: small;
@@ -57,7 +53,8 @@ iframe{
   @include templateGrid  (1); 
 } 
 .contenedor-videos {
-  margin-bottom: 10px;}
+  margin-bottom: 10px;
+}
 }
 @media(max-width:$bpSmall){
   .contenedor_imagen img{

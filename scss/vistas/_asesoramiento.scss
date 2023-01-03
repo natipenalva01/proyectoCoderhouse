@@ -6,12 +6,20 @@
     }
     &_subtitulo{
     text-align: center;
-    margin: 0px 10px;
+    margin: 40px 0;
     }
+}
+.contenedor-contenido{
+    max-width: 800px;
+    margin: 0 auto;
 }
 .contenedor_info{
     display: flex;
     align-items:center;
+    padding: $defaultPadding;
+    img{
+        margin: 20px;
+    }
     &-virtual {
       p{
         padding: $defaultPadding;

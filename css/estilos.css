@@ -125,8 +125,7 @@ iframe {
 
 .contenedor_info {
   display: flex;
-  align-items: center;
-  padding: 20px; }
+  align-items: center; }
   .contenedor_info-virtual p {
     padding: 20px; }
   .contenedor_info-consulta p {
@@ -142,10 +141,8 @@ iframe {
 
 .boton-reserva {
   margin: 20px;
-  border: none;
   padding: 12px;
   background-color: #a19a9a;
-  margin-top: 10px;
   font-size: 15px;
   border-radius: 10px; }
 
@@ -388,3 +385,443 @@ iframe {
   .proyectos_imagen img {
     height: 260px;
     width: 240px; } }
+
+/* estilo general */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+header img {
+  animation: ease-in animacionLogo 1s; }
+
+@keyframes animacionLogo {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #D8D9CF; }
+
+.navbar-nav {
+  width: 100%;
+  justify-content: center; }
+
+.nav-link {
+  color: #0b0b0b;
+  font-weight: bolder;
+  font-size: 1.1rem;
+  font-style: italic; }
+
+.imagen-logo {
+  width: 130px;
+  height: 130px; }
+
+ul li {
+  display: inline;
+  margin: 0px 20px; }
+
+.footer {
+  padding: 40px;
+  border-top: #5b5b5b 1px solid; }
+
+.nav-li-footer {
+  list-style-type: none;
+  margin: 0px 20px;
+  display: flex;
+  justify-content: center;
+  color: #5b5b5b;
+  font-weight: bolder; }
+
+i {
+  font-size: 1.3rem; }
+
+/* index */
+.frase-inicio {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: xx-large;
+  margin-bottom: 10px; }
+
+.contenedor-imagen {
+  display: flex;
+  justify-content: center;
+  margin: 10px; }
+
+.contenedor-imagen img {
+  width: 400px;
+  height: 400px; }
+
+iframe {
+  width: 560px;
+  height: 315px; }
+
+.video-inicio {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px; }
+
+/* asesoramiento */
+.asesoramiento-titulo {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder; }
+
+.asesoramiento-subtitulo {
+  text-align: center;
+  margin: 0px 10px; }
+
+.contenedor-info-asesoramiento {
+  display: flex;
+  align-items: center; }
+
+.contenedor-info-asesoramiento img {
+  padding: 10px; }
+
+.contenedor-info-asesoramiento p {
+  padding: 20px; }
+
+.imagen-asesoramiento {
+  display: flex;
+  justify-content: center; }
+
+.imagen-asesoramiento img {
+  height: 250px;
+  width: 300px;
+  margin: 10px 10px;
+  padding: 20px; }
+
+.parrafo-aesoramiento--virtual {
+  padding: 20px; }
+
+.info-consulta p {
+  padding: 20px; }
+
+.info-consulta img {
+  margin-bottom: 10px; }
+
+.contenedor-imagen-consulta {
+  display: flex;
+  justify-content: center; }
+
+.contenedor-imagen-consulta img {
+  width: 400px;
+  height: 350px; }
+
+.boton-reserva {
+  border: none;
+  padding: 12px;
+  background-color: #a19a9a;
+  margin-top: 10px;
+  font-size: 15px;
+  border-radius: 10px; }
+
+.estilo-a {
+  color: #0f0f0f;
+  text-decoration: none; }
+
+.estilo-a:hover {
+  color: #faf7f7; }
+
+/* contacto */
+.contacto-titulo {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder; }
+
+.info-contacto {
+  text-align: center;
+  margin-bottom: 10px; }
+
+.info-contacto p {
+  margin: 10px; }
+
+/* formulario */
+.form-container {
+  text-align: center;
+  margin: 10px; }
+
+.form__title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bolder; }
+
+/* nuevo formulario contacto */
+.form-registro {
+  width: 400px;
+  padding: 30px;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color: #bdb8b8;
+  border-radius: 10px; }
+
+.form-registro h2 {
+  font-size: 22px; }
+
+.controls {
+  width: 100%;
+  background: #ece5e5;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  font-size: 18px; }
+
+.controls-mensaje {
+  width: 100%;
+  background: #ece5e5;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  font-size: 18px;
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%; }
+
+.buttons {
+  width: 100%;
+  border: none;
+  padding: 12px;
+  background-color: #5b5b5b;
+  margin-top: 10px;
+  font-size: 15px; }
+
+/* producto */
+.main-productos {
+  margin-bottom: 10px; }
+
+.producto-titulo {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder; }
+
+.productos-venta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  gap: 30px;
+  justify-items: center;
+  margin: 10px 0px; }
+
+.productos-venta img {
+  width: 300px;
+  height: 300px; }
+
+/* card productos */
+.card {
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 1s ease; }
+
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%); }
+
+.card img {
+  width: 100%;
+  height: 270px; }
+
+.btn {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #5b5b5b;
+  padding: 10px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  transition: 2s; }
+
+.btn:hover {
+  border: 1px solid black; }
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  background-color: #D8D9CF; }
+
+.card-title {
+  display: flex;
+  justify-content: center; }
+
+.card-text {
+  display: flex;
+  justify-content: center; }
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+/* proyectos */
+.main-proyectos {
+  margin-bottom: 10px; }
+
+.proyectos-titulo {
+  text-align: center;
+  font-size: 50px;
+  font-weight: bolder; }
+
+.imagen-proyecto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; }
+
+.imagen-proyecto img {
+  width: 400px;
+  height: 400px;
+  transition: all 300ms;
+  position: relative; }
+
+.imagen-proyecto img:hover {
+  transform: scale(1.1); }
+
+/* encontra tu estilo */
+.estilo-titulo {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 30px; }
+
+.info-estilo-industrial p {
+  padding: 10px 20px; }
+
+.contenedor-imagen-industr {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; }
+
+.contendor-imagen-industrial {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px; }
+
+.info-estilo-nordico p {
+  padding: 10px 20px; }
+
+.contenedor-imagen-nordi {
+  display: flex;
+  justify-content: center;
+  margin: 10px; }
+
+.contenedor-imagen-nordico {
+  display: flex;
+  justify-content: space-evenly; }
+
+.info-estilo-minimalista p {
+  padding: 10px 20px; }
+
+.contendor-imagen-minimalista {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; }
+
+.info-estilo-boho p {
+  padding: 10px 20px; }
+
+.contenedor-imagen-boho {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; }
+
+.contenedor-imagen-boho img {
+  margin-bottom: 10px; }
+
+@media (max-width: 768px) {
+  /* index */
+  .video-inicio {
+    display: grid; }
+  .iframe {
+    grid-template-columns: repeat(1 1fr);
+    grid-template-rows: repeat(2 1fr); }
+  .contenedor-videos {
+    margin-bottom: 10px; }
+  /* proyectos */
+  .imagen-proyecto {
+    display: flex; }
+  .imagen-proyecto img {
+    margin-bottom: 10px; }
+  /* contacto */
+  .info-contacto {
+    margin: 40px; }
+  .form__title {
+    margin-top: 20px; }
+  .form__container {
+    padding: 10px; }
+  .contendor-imagen-industrial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; }
+  .contenedor-imagen-nordico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; } }
+
+@media (max-width: 320px) {
+  /* inicio */
+  .contenedor-imagen img {
+    width: 18rem; }
+  .video-inicio {
+    display: none; }
+  .frase-inicio {
+    font-size: smaller;
+    padding: 20px; }
+  .footer {
+    display: flex; }
+  .nav-li-footer {
+    flex-direction: column; }
+  .nav-li-footer li {
+    font-size: smaller;
+    text-align: center; }
+  i {
+    font-size: 1rem; }
+  /* asesoramiento */
+  .imagen-asesoramiento {
+    display: flex;
+    flex-direction: column; }
+  .contenedor-info-asesoramiento img {
+    display: none; }
+  .contenedor-imagen-consulta img {
+    height: 253px;
+    width: 310px; }
+  /* proyecto */
+  .imagen-proyecto img {
+    height: 260px;
+    width: 240px; }
+  /* encontra tu estilo */
+  .contenedor-imagen-industr img {
+    width: 281px;
+    height: 308px; }
+  .contendor-imagen-industrial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; }
+  .contendor-imagen-industrial img {
+    height: 281px;
+    width: 258px; }
+  .contenedor-imagen-nordico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; }
+  .contenedor-imagen-nordico img {
+    width: 289px;
+    height: 320px; }
+  .contendor-imagen-minimalista img {
+    width: 299px;
+    height: 300px; }
+  .contenedor-imagen-boho img {
+    height: 260px;
+    width: 276px; }
+  .form-registro {
+    width: 300px;
+    height: 661px; } }

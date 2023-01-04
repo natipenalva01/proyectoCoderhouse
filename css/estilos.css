@@ -244,22 +244,28 @@ iframe {
 .estilo_titulo {
   text-align: center;
   font-size: 50px;
-  margin-top: 30px; }
+  margin: 40px 0; }
 
 .estilo p {
   padding: 10px 20px; }
+
+.contenedor-contenido {
+  max-width: 800px;
+  margin: 0 auto; }
 
 .contenedor_imagen {
   margin-bottom: 20px; }
   .contenedor_imagen-industrial {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 20px; }
+    margin-top: 20px;
+    gap: 20px; }
   .contenedor_imagen-nordi {
     margin: 10px; }
   .contenedor_imagen-nordico {
     display: flex;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    gap: 20px; }
 
 .info_estilo p {
   padding: 10px 20px; }

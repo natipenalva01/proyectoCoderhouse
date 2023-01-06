@@ -55,20 +55,31 @@ iframe{
 .contenedor-videos {
   margin-bottom: 10px;
 }
-}
-@media(max-width:$bpSmall){
-  .contenedor_imagen img{
-    width: 18rem ;
-    padding: $defaultSize;
-  } 
-  .contenedor-videos{
-    display: none;
+.icono {
+  display: grid;
+  gap: 40px;
   }
-  .frase-inicio{
-    font-size: smaller;
-    padding: 20px;           
+
+.footer_nav {
+  display: grid;
+  gap: 20px;
+  text-align: center;
+  }
+
+@media(max-width:$bpSmall){
+.contenedor_imagen img{
+  width: 18rem ;
+  padding: $defaultSize;
+  } 
+.contenedor-videos{
+  display: none;
+  }
+.frase-inicio{
+  font-size: smaller;
+  padding: 20px;           
   }
   .icono{
-    display: none;
+  display: none;
   }
   }
+}

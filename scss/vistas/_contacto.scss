@@ -6,7 +6,7 @@
     margin-bottom: $defaultSize;
     border: 1px solid black;
     font-size: 18px;
-};
+}
 
 .contacto-titulo {
     text-align: center;
@@ -38,10 +38,10 @@
 .controls{
     @include controls;
     &_mensaje{
-        @include controls;
-        min-height: 100px;
-        max-height: 200px;
-        max-width: 100%;
+    @include controls;
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
     }
 }
 .buttons{
@@ -53,7 +53,7 @@
     font-size: 15px;
     transition: $transition;
     &:hover{
-        color: whitesmoke;
+    color: whitesmoke;
     }
 }
 
@@ -62,15 +62,15 @@
     margin:40px;
  }
  .form_registro-title{
-     margin-top: 20px;
+    margin-top: 20px;
  }
 }
 @media (max-width:$bpSmall){
-    .info_contacto p{
-        font-size: smaller;
-     }
-    .form_registro{
-        width: 300px;
-        height: 661px;
+.info_contacto p{
+    font-size: smaller;
+    }
+.form_registro{
+    width: 300px;
+    height: 661px;
     }
 }

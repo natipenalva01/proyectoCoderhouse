@@ -25,22 +25,22 @@ iframe{
   display: flex;
   justify-content: space-around;
   &_envio{
-    h5{
-      @extend .justify;
-      font-size: small;
-    }
+  h5{
+  @extend .justify;
+  font-size: small;
+  }
   }
   &_tarjetas{
-    h5{
-      @extend .justify;
-      font-size: small;
-    }
+  h5{
+  @extend .justify;
+  font-size: small;
+  }
   }
   &_efectivo{
-    h5{
-      @extend .justify;
-      font-size: small;
-    }
+  h5{
+  @extend .justify;
+  font-size: small;
+  }
   }
   }
 
@@ -58,28 +58,28 @@ iframe{
 .icono {
   display: grid;
   gap: 40px;
-  }
+}
 
 .footer_nav {
   display: grid;
   gap: 20px;
   text-align: center;
-  }
+}
 
 @media(max-width:$bpSmall){
 .contenedor_imagen img{
   width: 18rem ;
   padding: $defaultSize;
-  } 
+} 
 .contenedor-videos{
   display: none;
-  }
+}
 .frase-inicio{
   font-size: smaller;
   padding: 20px;           
-  }
-  .icono{
+}
+.icono{
   display: none;
-  }
-  }
+}
+}
 }

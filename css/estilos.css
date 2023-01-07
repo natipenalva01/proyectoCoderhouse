@@ -334,7 +334,8 @@ iframe {
     width: 280px; } }
 
 .productos {
-  margin-bottom: 10px; }
+  max-width: 1500px;
+  margin: 0 auto; }
   .productos_titulo {
     text-align: center;
     font-size: 50px;

@@ -1,5 +1,7 @@
 .productos{
-    margin-bottom: $defaultSize;
+    // margin-bottom: $defaultSize;
+    max-width: 1500px;
+    margin: 0 auto;
     &_titulo{
         text-align: center;
         font-size: 50px;

@@ -7,9 +7,5 @@ Este proyecto personal es un ecommerce que utiliza las siguientes tecnologías:
 <br>
 • Bootstrap.
 <br>
-•Flexbox.
-<br>
-• Grids.
-<br>
 • SASS.
 
